@@ -1,0 +1,16 @@
+<web-ext xmlns="http://websphere.ibm.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://websphere.ibm.com/xml/ns/javaee http://websphere.ibm.com/xml/ns/javaee/ibm-web-ext_1_0.xsd"
+	version="1.0">
+	<context-root uri="/" />
+	<servlet>
+		<description></description>
+		<display-name>ConnectionServlet</display-name>
+		<servlet-name>ConnectionServlet</servlet-name>
+		<servlet-class>com.csm.enrici.routing.ConnectionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConnectionServlet</servlet-name>
+		<url-pattern>/connect</url-pattern>
+	</servlet-mapping>
+</web-ext>
